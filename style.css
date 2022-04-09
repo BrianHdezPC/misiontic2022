@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(imagenes/astronauta.jpg);
   background-position: center;
@@ -7,10 +11,37 @@ body {
   font-family: 'Space Mono', monospace, Helvetica;
 }
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {
+  width: 97%;
+  align-items: center;
+}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: none;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+}
+
 div.caja_transparente {
   background-color: #ffffff;
   border: 1px solid white;
-  margin: 20px 20px;
+  margin: 20px;
   margin-bottom: 20px;
   opacity: 0.8;
 }
@@ -45,12 +76,13 @@ h2 {
 
 .demo {
   font-family: 'Space Mono', monospace;
-  font-weight: 800;
   font-size: 20px;
+  font-weight: 800;
   text-align: center;
 }
 
 .container {
+  align-items: center;
   column-count: 3;
   display: grid;
   grid-auto-flow: row;
