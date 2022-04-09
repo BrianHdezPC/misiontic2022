@@ -58,7 +58,7 @@ h2 {
   align-items: center;
   column-count: 3;
   display: grid;
-  grid-auto-flow: row;
+  grid-auto-columns: auto;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(3,260px);
@@ -69,6 +69,8 @@ h2 {
   border: 1px solid;
   border-style: none;
   display: grid;
+  grid-auto-columns: auto;
+  grid-auto-flow: dense;
   justify-items: center;
   padding: 5px;
   text-align: center;
@@ -88,7 +90,7 @@ h2 {
 }
 
 /* For mobile phones: */
-[class*="col-"] {
+[class*="col- sistema"] {
   width: 100%;
 }
 
