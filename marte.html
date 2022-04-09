@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="style.css" type="text/css" media=screen>
+  <title>Tu Peso en Otros Planetas</title>
+</head>
+
+<body>
+  <div class="fondo">
+    <h1><strong>¿Cuánto Pesas en Otros Lugares de Nuestro Sistema Solar?</strong></h1>
+    <div class="caja_transparente">
+      <p>La Fuerza de Gravedad en el planeta Tierra (9.8 m/s<strong><sup>2</sup></strong>)
+        determina lo que conocemos como tu peso actual, pero... ¿te has preguntado alguna vez
+        cuál sería tu peso en la Luna? o ¿qué tal en otro planeta de nuestro sistema solar
+        (incluso en el planetoide Plutón)?</p>
+
+        <div class="container">
+         <div class="sistema"><h2>La Luna</h2>
+           <img src="imagenes/luna.png" class="grid_img" alt="Imagen de la Luna terrestre.">
+           <span class="gravedad">Gravedad: 1.62 m/s<sup>2</sup></span>
+         </div>
+         <div class="sistema"><h2>Mercurio</h2>
+           <img src="imagenes/mercurio.png" class="grid_img" alt="Imagen del planeta Mercurio.">
+           <span class="gravedad">Gravedad: 3.7 m/s<strong><sup>2</sup></strong></span>
+         </div>
+         <div class="sistema"><h2>Venus</h2>
+           <img src="imagenes/venus.png" class="grid_img" alt="Imagen del planeta Venus.">
+           <span class="gravedad">Gravedad: 8.87 m/s<strong><sup>2</sup></strong></span>
+         </div>
+         <div class="sistema"><h2>Marte</h2>
+           <img src="imagenes/marte.png" class="grid_img" alt="Imagen del planeta Marte.">
+           <span class="gravedad">Gravedad: 3.711 m/s<strong><sup>2</sup></strong></span>
+         </div>
+         <div class="sistema"><h2>Júpiter</h2>
+           <img src="imagenes/jupiter.png" class="grid_img" alt="Imagen del planeta Júpiter.">
+           <span class="gravedad">Gravedad: 24.7 m/s<strong><sup>2</sup></strong></span>
+         </div>
+         <div class="sistema"><h2>Saturno</h2>
+           <img src="imagenes/saturno.png" class="grid_img" alt="Imagen del planeta Saturno.">
+           <span class="gravedad">Gravedad: 10.44 m/s<strong><sup>2</sup></strong></span>
+         </div>
+         <div class="sistema"><h2>Urano</h2>
+           <img src="imagenes/urano.png" class="grid_img" alt="Imagen del planeta Urano.">
+           <span class="gravedad">Gravedad: 8.87 m/s<strong><sup>2</sup></strong></span>
+         </div>
+         <div class="sistema"><h2>Neptuno</h2>
+           <img src="imagenes/neptuno.png" class="grid_img" alt="Imagen del planeta Neptuno.">
+           <span class="gravedad">Gravedad: 11.15 m/s<strong><sup>2</sup></strong></span>
+         </div>
+         <div class="sistema"><h2>Plutón</h2>
+           <img src="imagenes/pluton.png" class="grid_img" alt="Imagen del planetoide Plutón.">
+           <span class="gravedad">Gravedad: 0.62 m/s<strong><sup>2</sup></strong></span>
+         </div>
+       </div>
+
+      <p class="input_peso">Bien, ¡vamos a descubrirlo! Para saberlo, por favor
+        indícanos <strong>tu peso (en Kilogramos)</strong> y luego sigue las instrucciones.
+        <br>
+        <br>
+        <input id="peso" type="number" name="peso" value="" placeholder="0"  min="1" max="999" step="1" required pattern="[0-9]{2,4}">
+        <br>
+        <br>
+
+        <script type="text/javascript">
+        var input = document.getElementById("peso");
+        input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+        }
+        });
+        function calcular() {
+          var usuario = document.getElementById("peso").value;
+          document.getElementById("peso").innerHTML = usuario;
+          var peso = parseInt(usuario);
+          var elegir_planeta = prompt("Indica qué planeta te gustaría elegir, o si prefieres, elige la Luna o Plutón.");
+          var planeta = elegir_planeta;
+          /* planetas a trabajar: todos los del sistema solar y la luna de la tierra*/
+          var g_luna = 1.62;
+          var g_mercurio = 3.7;
+          var g_venus = 8.87;
+          var g_tierra = 9.8;
+          var g_marte = 3.711;
+          var g_jupiter = 24.7;
+          var g_saturno = 10.44;
+          var g_urano = 8.87;
+          var g_neptuno = 11.15;
+          var g_pluton = 0.62;
+
+          switch (planeta) {
+            case "Luna": case "LUNA": case "luna":
+            case "la Luna": case "LA LUNA": case "la luna":
+              var g_planeta = g_luna;
+              break;
+            case "Mercurio": case "MERCURIO": case "mercurio":
+              var g_planeta = g_mercurio;
+              break;
+            case "Venus": case "VENUS": case "venus":
+              var g_planeta = g_venus;
+              break;
+            case "Marte": case "MARTE": case "marte":
+              var g_planeta = g_marte;
+              break;
+            case "Júpiter": case "JÚPITER": case "júpiter":
+            case "Jupiter": case "JUPITER": case "jupiter":
+              var g_planeta = g_jupiter;
+              break;
+            case "Saturno": case "SATURNO": case "saturno":
+              var g_planeta = g_saturno;
+              break;
+            case "Urano": case "URANO": case "urano":
+              var g_planeta = g_urano;
+              break;
+            case "Urano": case "URANO": case "urano":
+              var g_planeta = g_urano;
+              break;
+            case "Neptuno": case "NEPTUNO": case "neptuno":
+              var g_planeta = g_neptuno;
+              break;
+            case "Plutón": case "PLUTÓN": case "plutón":
+            case "Pluton": case "PLUTON": case "pluton":
+              var g_planeta = g_pluton;
+              break;
+            default:
+              var planeta = "la Tierra";
+              var g_planeta = 9.8;
+          }
+            function result() {
+              if (peso <= 0) {
+                var peso_final = parseInt((9.8 * 0) / g_tierra);
+                var valor = ("Lo sentimos, la opción " + peso_final +" Kgs. no es válida. Por favor intenta nuevamente.");
+                document.getElementById("demo").innerHTML = valor
+              } else if (isNaN(peso)) {
+                var peso_final = parseInt((9.8 * 0) / g_tierra);
+                var valor = ("Lo sentimos, la opción " + peso_final +" Kgs. no es válida. Por favor intenta nuevamente.");
+                document.getElementById("demo").innerHTML = valor
+              }
+              else if (planeta == "luna" || planeta == "LUNA" || planeta == "Luna"){
+                var peso_final = parseInt((g_luna * peso) / g_tierra);
+                var valor = ("<strong>En la " + planeta +", tu peso es de: " + peso_final + " Kgs.</strong>");
+                document.getElementById("demo").innerHTML = valor
+              }
+              else if (planeta == "la Tierra"){
+                var peso_final = parseInt((9.8 * peso) / g_tierra);
+                var valor = ("Lo sentimos, la opción no es válida. Por favor intenta nuevamente. <br> <strong>No has salido de " + planeta +", así que tu peso sigue siendo de: " + peso_final + " Kgs.</strong>");
+                document.getElementById("demo").innerHTML = valor
+              }
+              else {
+                var peso_final = parseInt((g_planeta * peso) / g_tierra);
+                var valor = ("<strong>En " + planeta +", tu peso es de: " + peso_final + " Kgs.</strong>");
+                document.getElementById("demo").innerHTML = valor
+              }
+          }
+          return result();
+          document.getElementById("demo").innerHTML = valor;
+        }
+        </script>
+        <br>
+        <input type="submit" id="myBtn" value="Calcular" onclick="calcular()">
+        <br>
+        <p id="demo" class="demo"></p>
+      </p>
+      <br>
+      <br>
+    </div>
+  </div>
+</body>
+
+</html>

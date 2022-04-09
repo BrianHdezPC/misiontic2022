@@ -1,0 +1,82 @@
+body {
+  background-image: url(imagenes/astronauta.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: 'Space Mono', monospace, Helvetica;
+  height: 800px;
+
+}
+
+div.caja_transparente {
+  background-color: #ffffff;
+  border: 1px solid white;
+  margin: 20px 20px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+div.caja_transparente p {
+  color: black;
+  font-weight: bold;
+  margin: 2%;
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 40px;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: underline white;
+  text-transform: uppercase;
+}
+
+h1 strong {
+  color: white;
+}
+
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+}
+
+.input_peso {
+  text-align: center;
+}
+
+.demo {
+  font-family: 'Space Mono', monospace;
+  font-weight: 800;
+  text-align: center;
+}
+
+.container {
+  column-count: 3;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(3,260px);
+  grid-template-columns: repeat(3,300px);
+  justify-content: center;
+}
+
+.sistema {
+  border: 1px solid white;
+  display: grid;
+  justify-items: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.gravedad {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+.grid_img {
+  height: 120px;
+  object-fit: cover;
+  width: 120px;
+  align-items: center;
+}
