@@ -85,10 +85,12 @@ h2 {
 }
 
 .grid_img {
-  display: flex;
+  display: inline-flex;
   height: 120px;
   object-fit: cover;
   width: 120px;
+  border: 1px;
+  border-style: none;
 }
 
 /* For mobile phones: */
@@ -99,7 +101,8 @@ h2 {
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: none;
+  border: 1px;
+  border-style: none;
 }
 
 .row::after {
@@ -126,7 +129,8 @@ h2 {
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: none;
+  border: 1px;
+  border-style: none;
 }
 
 .row::after {
@@ -153,7 +157,8 @@ h2 {
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: none;
+  border: 1px;
+  border-style: none;
 }
 
 .row::after {
