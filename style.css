@@ -119,6 +119,17 @@ h2 {
   .col-s-12 {width: 100%;}
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: none;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
@@ -133,4 +144,15 @@ h2 {
   .col-10 {width: 83.33%;}
   .col-11 {width: 97%;}
   .col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: none;
+}
+
+.row::after {
+  content: "";
+  clear: both;
 }
