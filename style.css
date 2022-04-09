@@ -5,15 +5,13 @@ body {
   background-size: cover;
   color: black;
   font-family: 'Space Mono', monospace, Helvetica;
-  height: 800px;
-
 }
 
 div.caja_transparente {
   background-color: #ffffff;
   border: 1px solid white;
   margin: 20px 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   opacity: 0.8;
 }
 
@@ -54,14 +52,16 @@ h2 {
 .container {
   column-count: 3;
   display: grid;
+  grid-auto-flow: row;
   grid-gap: 10px;
+  grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(3,260px);
-  grid-template-columns: repeat(3,300px);
   justify-content: center;
 }
 
 .sistema {
-  border: 1px solid white;
+  border: 1px solid;
+  border-style: none;
   display: grid;
   justify-items: center;
   padding: 5px;
@@ -75,8 +75,8 @@ h2 {
 }
 
 .grid_img {
-  height: 120px;
+  height: 56%;
   object-fit: cover;
-  width: 120px;
+  width: 48%;
   align-items: center;
 }
