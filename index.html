@@ -134,27 +134,27 @@
               if (peso <= 0) {
                 var peso_final = parseInt((9.8 * 0) / g_tierra);
                 var valor = ("Lo sentimos, la opción " + peso_final +" Kgs. no es válida. Por favor intenta nuevamente.");
-                document.getElementById("demo").innerHTML = valor
+                document.getElementById("demo").innerHTML = valor;
               } 
               else if (peso == null || peso == "" || isNaN(peso)) {
                 var peso_final = parseInt((9.8 * 0) / g_tierra);
                 var valor = ("Lo sentimos, la opción " + peso_final +" Kgs. no es válida. Por favor intenta nuevamente.");
-                document.getElementById("demo").innerHTML = valor
+                document.getElementById("demo").innerHTML = valor;
               }
               else if (planeta == "luna" || planeta == "LUNA" || planeta == "Luna"){
                 var peso_final = parseInt((g_luna * peso) / g_tierra);
                 var valor = ("<strong>En la " + planeta +", tu peso es de: " + peso_final + " Kgs.</strong>");
-                document.getElementById("demo").innerHTML = valor
+                document.getElementById("demo").innerHTML = valor;
               }
               else if (planeta == "la Tierra"){
                 var peso_final = parseInt((9.8 * peso) / g_tierra);
                 var valor = ("Lo sentimos, la opción no es válida. Por favor intenta nuevamente. <br> <strong>No has salido de " + planeta +", así que tu peso sigue siendo de: " + peso_final + " Kgs.</strong>");
-                document.getElementById("demo").innerHTML = valor
+                document.getElementById("demo").innerHTML = valor;
               }
               else {
                 var peso_final = parseInt((g_planeta * peso) / g_tierra);
                 var valor = ("<strong>En " + planeta +", tu peso es de: " + peso_final + " Kgs.</strong>");
-                document.getElementById("demo").innerHTML = valor
+                document.getElementById("demo").innerHTML = valor;
               }
           }
           return result();
