@@ -75,8 +75,8 @@ h2 {
 }
 
 .grid_img {
-  height: 56%;
+  height: 120px;
   object-fit: cover;
-  width: 48%;
+  width: 120px;
   align-items: center;
 }
