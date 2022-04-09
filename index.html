@@ -136,7 +136,7 @@
                 var valor = ("Lo sentimos, la opción " + peso_final +" Kgs. no es válida. Por favor intenta nuevamente.");
                 document.getElementById("demo").innerHTML = valor;
               } 
-              else if (peso == null || peso == "" || isNaN(peso)) {
+              else if (peso == null || peso == false || peso == "" || isNaN(peso)) {
                 var peso_final = parseInt((9.8 * 0) / g_tierra);
                 var valor = ("Lo sentimos, la opción " + peso_final +" Kgs. no es válida. Por favor intenta nuevamente.");
                 document.getElementById("demo").innerHTML = valor;
@@ -159,7 +159,6 @@
           }
           return result();
           document.getElementById("demo").innerHTML = valor;
-          break;
         }
         </script>
         <br>
