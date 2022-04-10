@@ -21,51 +21,68 @@
 
         <div class="container col-12">
          <div class="sistema">
-           <h2>La Luna</h2>
-           <img src="imagenes/luna.png" class="grid_img" alt="Imagen de la Luna terrestre.">
-           <span class="gravedad">Gravedad:<br>1.62 m/s<sup>2</sup></span>
+           <div>
+             <h2>La Luna</h2>
+             <img src="imagenes/luna.png" class="grid_img" alt="Imagen de la Luna terrestre.">
+             <span class="gravedad">Gravedad:<br>1.62 m/s<sup>2</sup></span>
+           </div>
          </div>
          <div class="sistema">
-           <h2>Mercurio</h2>
-           <img src="imagenes/mercurio.png" class="grid_img" alt="Imagen del planeta Mercurio.">
-           <span class="gravedad">Gravedad:<br>3.7 m/s<strong><sup>2</sup></strong></span>
+           <div>
+             <h2>Mercurio</h2>
+             <img src="imagenes/mercurio.png" class="grid_img" alt="Imagen del planeta Mercurio.">
+             <span class="gravedad">Gravedad:<br>3.7 m/s<strong><sup>2</sup></strong></span>
+           </div>
          </div>
          <div class="sistema">
-           <h2>Venus</h2>
-           <img src="imagenes/venus.png" class="grid_img" alt="Imagen del planeta Venus.">
-           <span class="gravedad">Gravedad:<br>8.87 m/s<strong><sup>2</sup></strong></span>
+           <div>
+             <h2>Venus</h2>
+             <img src="imagenes/venus.png" class="grid_img" alt="Imagen del planeta Venus.">
+             <span class="gravedad">Gravedad:<br>8.87 m/s<strong><sup>2</sup></strong></span>
+           </div>
          </div>
          <div class="sistema">
-           <h2>Marte</h2>
-           <img src="imagenes/marte.png" class="grid_img" alt="Imagen del planeta Marte.">
-           <span class="gravedad">Gravedad:<br>3.711 m/s<strong><sup>2</sup></strong></span>
+           <div>
+             <h2>Marte</h2>
+             <img src="imagenes/marte.png" class="grid_img" alt="Imagen del planeta Marte.">
+             <span class="gravedad">Gravedad:<br>3.711 m/s<strong><sup>2</sup></strong></span>
+           </div>
          </div>
          <div class="sistema">
-           <h2>Júpiter</h2>
-           <img src="imagenes/jupiter.png" class="grid_img" alt="Imagen del planeta Júpiter.">
-           <span class="gravedad">Gravedad:<br>24.7 m/s<strong><sup>2</sup></strong></span>
+           <div>
+             <h2>Júpiter</h2>
+             <img src="imagenes/jupiter.png" class="grid_img" alt="Imagen del planeta Júpiter.">
+             <span class="gravedad">Gravedad:<br>24.7 m/s<strong><sup>2</sup></strong></span>
+           </div>
          </div>
          <div class="sistema">
-           <h2>Saturno</h2>
-           <img src="imagenes/saturno.png" class="grid_img" alt="Imagen del planeta Saturno.">
-           <span class="gravedad">Gravedad:<br>10.44 m/s<strong><sup>2</sup></strong></span>
+           <div>
+             <h2>Saturno</h2>
+             <img src="imagenes/saturno.png" class="grid_img" alt="Imagen del planeta Saturno.">
+             <span class="gravedad">Gravedad:<br>10.44 m/s<strong><sup>2</sup></strong></span>
+           </div>
          </div>
          <div class="sistema">
-           <h2>Urano</h2>
-           <img src="imagenes/urano.png" class="grid_img" alt="Imagen del planeta Urano.">
-           <span class="gravedad">Gravedad:<br>8.87 m/s<strong><sup>2</sup></strong></span>
+           <div>
+             <h2>Urano</h2>
+             <img src="imagenes/urano.png" class="grid_img" alt="Imagen del planeta Urano.">
+             <span class="gravedad">Gravedad:<br>8.87 m/s<strong><sup>2</sup></strong></span>
+           </div>
          </div>
          <div class="sistema">
-           <h2>Neptuno</h2>
-           <img src="imagenes/neptuno.png" class="grid_img" alt="Imagen del planeta Neptuno.">
-           <span class="gravedad">Gravedad:<br>11.15 m/s<strong><sup>2</sup></strong></span>
+           <div>
+             <h2>Neptuno</h2>
+             <img src="imagenes/neptuno.png" class="grid_img" alt="Imagen del planeta Neptuno.">
+             <span class="gravedad">Gravedad:<br>11.15 m/s<strong><sup>2</sup></strong></span>
+           </div>
          </div>
          <div class="sistema">
-           <h2>Plutón</h2>
-           <img src="imagenes/pluton.png" class="grid_img" alt="Imagen del planetoide Plutón.">
-           <span class="gravedad">Gravedad:<br>0.62 m/s<strong><sup>2</sup></strong></span>
+           <div>
+              <h2>Plutón</h2>
+              <img src="imagenes/pluton.png" class="grid_img" alt="Imagen del planetoide Plutón.">
+              <span class="gravedad">Gravedad:<br>0.62 m/s<strong><sup>2</sup></strong></span>
+           </div>
          </div>
-       </div>
 
       <p class="input_peso">Bien, ¡vamos a descubrirlo! Para saberlo, por favor
         indícanos <strong>tu peso (en Kilogramos)</strong> y luego sigue las instrucciones.
@@ -91,7 +108,7 @@
           var usuario = document.getElementById("peso").value;
           document.getElementById("peso").innerHTML = usuario;
           var peso = parseInt(usuario);
-          var elegir_planeta = prompt("Indica qué planeta te gustaría elegir, o si prefieres, elige la Luna o Plutón.");
+          var elegir_planeta = prompt("Escribe el nombre planeta te gustaría elegir, o si prefieres, elige la Luna o Plutón.");
           var planeta = elegir_planeta;
           /* planetas a trabajar: todos los del sistema solar y la luna de la tierra*/
           var g_luna = 1.62;
@@ -180,8 +197,8 @@
         <p id="demo" class="demo"></p>
       <br>
       </p>
+      </div>
     </div>
-  </div>
 </body>
 
 </html>
