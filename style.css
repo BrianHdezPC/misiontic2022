@@ -98,7 +98,7 @@ h2 {
 
 /* For mobile phones: */
 [class*="col- caja_transparente"] {
-  width: auto;
+  max-width: 100%;
 }
 
 [class*="col-"] {
@@ -106,6 +106,11 @@ h2 {
   padding: 15px;
   border: 1px;
   border-style: none;
+}
+
+.row::after {
+content: "";
+clear: both;
 }
 
 @media only screen and (min-width: 600px) {
