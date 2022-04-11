@@ -88,11 +88,9 @@ h2 {
 }
 
 .sistema img {
-  display: flex;
-  flex-wrap: wrap;
   align-content: center;
   height: 120px;
-  object-fit: contain;
+  object-fit: cover;
   max-width: 120px;
   border: 1px solid;
   border-style: none;
