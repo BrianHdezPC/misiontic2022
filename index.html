@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <link rel="stylesheet" href="style.css" type="text/css" media=screen>
   <title>Tu Peso en Otros Planetas</title>
@@ -84,14 +84,14 @@
            </div>
          </div>
 
-      <p class="input_peso">Bien, ¡vamos a descubrirlo! Para saberlo, por favor
+       <p class="input_peso">Bien, ¡vamos a descubrirlo! Para saberlo, por favor
         indícanos <strong>tu peso (en Kilogramos)</strong> y luego sigue las instrucciones.
-        <br>
-        <br>
+        <br><br>
         <!-- Ejecuta isNaN () onkeypress para verificar que no se permita input de letras en Firefox
         cuando el input es de type number. Chrome y Edge funcionan normalmente sin esta validación -->
-        <input id="peso" type="number" name="peso" value="" placeholder="0"  min="1" max="999" required pattern="[0-9]{2,4}"
-        onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;">
+          <label for="peso">Yo peso:</label>
+          <input id="peso" type="number" name="peso" value="" placeholder="0"  min="1" max="999" required pattern="[0-9]{2,4}"
+          onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;">
         <br>
         <br>
 
