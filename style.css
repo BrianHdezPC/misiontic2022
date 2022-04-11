@@ -104,14 +104,10 @@ h2 {
 }
 
 [class*="col-"] {
+  float: left;
   padding: 15px;
   border: 1px;
   border-style: none;
-}
-
-.row::after {
-content: "";
-clear: both;
 }
 
 @media only screen and (min-width: 600px) {
