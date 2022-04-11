@@ -98,7 +98,7 @@ h2 {
 
 /* For mobile phones: */
 [class*="col- caja_transparente"] {
-  width: 100%;
+  width: auto;
 }
 
 [class*="col-"] {
